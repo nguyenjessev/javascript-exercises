@@ -12,8 +12,10 @@ function sum (nums) {
 	}, 0);
 }
 
-function multiply () {
-	
+function multiply (nums) {
+	return nums.reduce((total, num) => {
+		return total*num;
+	}, 1);
 }
 
 function power() {
