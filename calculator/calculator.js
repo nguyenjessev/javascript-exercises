@@ -18,8 +18,12 @@ function power(a, b) {
 	return Math.pow(a, b);
 }
 
-function factorial() {
-	
+function factorial(num) {
+	let total = 1;
+	for (let i = 1; i <= num; i++) {
+		total *= i;
+	}
+	return total;
 }
 
 module.exports = {
