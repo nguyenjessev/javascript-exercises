@@ -6,8 +6,10 @@ function subtract (a, b) {
 	return a-b;
 }
 
-function sum () {
-	
+function sum (nums) {
+	return nums.reduce((total, num) => {
+		return total+num;
+	}, 0);
 }
 
 function multiply () {
