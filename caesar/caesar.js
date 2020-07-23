@@ -10,11 +10,11 @@ const caesar = function(s, offset) {
         let newCharCode = charCode + offset;
         const startCode = getStart(charCode);
 
-        newCharCode -= startCode;
-        newCharCode %= 26;
-        newCharCode += 26;
-        newCharCode %= 26;
-        newCharCode += startCode;
+        newCharCode -= startCode; // How far is the new charCode from the start
+        newCharCode %= 26; // Simplify
+        newCharCode += 26; // If it's negative, this gets it into range
+        newCharCode %= 26; // Gives final index. If greater than 26, will loop, if within range, will stay in range
+        newCharCode += startCode; // Offsets into the actual charCode range
 
         return String.fromCharCode(newCharCode);
     });
