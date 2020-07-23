@@ -14,8 +14,8 @@ function multiply (nums) {
 	return nums.reduce((total, num) => total*num, 1);
 }
 
-function power() {
-	
+function power(a, b) {
+	return Math.pow(a, b);
 }
 
 function factorial() {
