@@ -1,6 +1,6 @@
 const palindromes = function(s) {
     s = s.toLowerCase()
-         .replace(' ', '');
+         .replace(/[^a-zA-Z]/g, '');
     const reversed = s.split('')
                 .reverse()
                 .join('');
