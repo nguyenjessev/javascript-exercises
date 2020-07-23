@@ -7,15 +7,11 @@ function subtract (a, b) {
 }
 
 function sum (nums) {
-	return nums.reduce((total, num) => {
-		return total+num;
-	}, 0);
+	return nums.reduce((total, num) => total+num, 0);
 }
 
 function multiply (nums) {
-	return nums.reduce((total, num) => {
-		return total*num;
-	}, 1);
+	return nums.reduce((total, num) => total*num, 1);
 }
 
 function power() {
